@@ -236,7 +236,7 @@ func (c *Captcha) CreateCustom(str string) *Image {
 	}
 	dst := NewImage(c.size.X, c.size.Y)
 	c.drawBkg(dst)
-	c.drawNoises(dst)
+	// c.drawNoises(dst)
 	c.drawString(dst, str)
 	return dst
 }
